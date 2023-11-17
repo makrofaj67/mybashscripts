@@ -6,10 +6,6 @@ is_connected() {
     bluetoothctl info $DEVICE_MAC | grep -q "Connected: yes"
 }
 
-is_indevicelist() {
-    bluetoothctl devices | grep -q $DEVICE_MAC
-}
-
 while true; do
     if is_connected; then
         echo "Already connected"
