@@ -1,0 +1,13 @@
+[Unit]
+Description=Bluetooth Device Connection Service
+After=bluetooth.service
+Requires=bluetooth.service
+
+[Service]
+ExecStart=
+ExecStart=/home/gordon/blackmesa/bashscripts/auto_connect_k380.sh
+Restart=always
+User=gordon
+
+[Install]
+WantedBy=multi-user.target
