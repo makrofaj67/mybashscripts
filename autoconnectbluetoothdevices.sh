@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DEVICE_MAC="F4:73:35:9F:A7:FF"
+DEVICE_MAC="XX:XX:XX:XX:XX:XX" //change your mac here
 
 is_connected() {
     bluetoothctl info $DEVICE_MAC | grep -q "Connected: yes"
